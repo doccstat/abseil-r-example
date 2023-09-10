@@ -1,0 +1,14 @@
+Package: abseilExample
+Type: Package
+Title: Abseil C++ Header Files Package Example
+Description: This package serves as a bare minimum example for the R package
+    abseil.
+Version: 0.0.1
+Authors@R: c(
+    person("Xingchi", "Li", email = "anthony.li@stat.tamu.edu",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0006-2493-0853")))
+License: Apache License (>= 2)
+LinkingTo:
+    abseil,
+    Rcpp

@@ -12,3 +12,6 @@ License: Apache License (>= 2)
 LinkingTo:
     abseil,
     Rcpp
+Remotes:
+    github::doccstat/abseil-r
+

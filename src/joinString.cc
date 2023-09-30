@@ -1,5 +1,4 @@
 #include <Rcpp.h>
-// [[Rcpp::depends(abseil)]]
 #include "absl/strings/str_join.h"
 
 // [[Rcpp::export]]

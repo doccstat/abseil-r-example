@@ -7,3 +7,6 @@
 \description{
 This package serves as a bare minimum example for the R package abseil.
 }
+\examples{
+abseilExample:::joinString()
+}

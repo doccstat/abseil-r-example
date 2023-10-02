@@ -7,4 +7,6 @@
 #' @rdname abseilExample-package
 #' @importFrom Rcpp evalCpp
 #' @useDynLib abseilExample, .registration = TRUE
+#' @examples
+#' abseilExample:::joinString()
 NULL

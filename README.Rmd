@@ -1,24 +1,34 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-"
+)
+options(cli.hyperlink = FALSE, eval = TRUE)
+```
 
 # abseilExample
 
 [![R-CMD-check](https://github.com/doccstat/abseil-r-example/workflows/R-CMD-check/badge.svg)](https://github.com/doccstat/abseil-r-example/actions)
-[![Codecov test
-coverage](https://codecov.io/gh/doccstat/abseil-r-example/branch/main/graph/badge.svg)](https://app.codecov.io/gh/doccstat/abseil-r-example?branch=main)
-[![Last
-Commit](https://img.shields.io/github/last-commit/doccstat/abseil-r-example)](https://github.com/doccstat/abseil-r-example)
+[![Codecov test coverage](https://codecov.io/gh/doccstat/abseil-r-example/branch/main/graph/badge.svg)](https://app.codecov.io/gh/doccstat/abseil-r-example?branch=main)
+[![Last Commit](https://img.shields.io/github/last-commit/doccstat/abseil-r-example)](https://github.com/doccstat/abseil-r-example)
 [![r-universe](https://doccstat.r-universe.dev/badges/abseilExample)](https://doccstat.r-universe.dev)
 [![CodeFactor](https://www.codefactor.io/repository/github/doccstat/abseil-r-example/badge)](https://www.codefactor.io/repository/github/doccstat/abseil-r-example)
 
 ## Overview
 
-A bare minimum example for using [abseil](https://abseil.xingchi.li)
-headers in R package.
+A bare minimum example for using [abseil](https://abseil.xingchi.li) headers in
+R package.
 
 ## Installation
 
-``` r
+```{r eval = FALSE}
 ## install.packages("pak")
 pak::pak("doccstat/abseil-r-example")
 
@@ -28,21 +38,18 @@ devtools::install_github("doccstat/abseil-r-example")
 
 ## Examples
 
-``` r
+```{r}
 abseilExample:::joinString()
-#> [1] "foo-bar-baz"
 ```
 
 ## Contact us
 
 Encountered a bug or unintended behavior?
 
-1.  File a ticket at [GitHub
-    Issues](https://github.com/doccstat/abseil-r-example/issues).
+1.  File a ticket at
+    [GitHub Issues](https://github.com/doccstat/abseil-r-example/issues).
 2.  Contact the authors specified in
     [DESCRIPTION](https://github.com/doccstat/abseil-r-example/blob/main/DESCRIPTION#L7-L10).
 
 ## Stargazers over time
-
-[![Stargazers over
-time](https://starchart.cc/doccstat/abseil-r-example.svg)](https://starchart.cc/doccstat/abseil-r-example)
+[![Stargazers over time](https://starchart.cc/doccstat/abseil-r-example.svg)](https://starchart.cc/doccstat/abseil-r-example)

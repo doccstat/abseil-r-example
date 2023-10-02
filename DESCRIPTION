@@ -9,10 +9,10 @@ Authors@R: c(
            role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0009-0006-2493-0853")))
 License: Apache License (>= 2)
+Imports:
+    Rcpp (>= 0.11.0)
 LinkingTo:
     abseil,
     Rcpp
-Remotes:
-    github::doccstat/abseil-r
 Encoding: UTF-8
 RoxygenNote: 7.2.3

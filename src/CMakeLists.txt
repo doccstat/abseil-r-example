@@ -9,7 +9,11 @@ include(GenerateExportHeader)
 include_directories("${CMAKE_CURRENT_BINARY_DIR}")
 
 execute_process(
-    COMMAND R --slave -e "cat(.libPaths(), \"/abseil/include\", sep = \"\")"
+    COMMAND mkdir -p ${CMAKE_CURRENT_BINARY_DIR}/abseil-cpp
+)
+
+execute_process(
+    COMMAND bash "-c" "$(which R) --slave -e \'cat(.libPaths(), \"/abseil/include\", sep = \"\")\'"
     OUTPUT_VARIABLE ABSL_PATH
     OUTPUT_STRIP_TRAILING_WHITESPACE
 )

@@ -8,9 +8,9 @@ set(CMAKE_CXX_STANDARD 17)
 include(GenerateExportHeader)
 include_directories("${CMAKE_CURRENT_BINARY_DIR}")
 
-add_subdirectory(src/abseil-cpp)
+add_subdirectory(abseil-cpp)
 
-add_library(statusReturn SHARED src/statusReturn.cc)
+add_library(statusReturn SHARED statusReturn.cc)
 generate_export_header(statusReturn)
 
 target_link_libraries(statusReturn absl::status)

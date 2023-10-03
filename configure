@@ -5,7 +5,7 @@ which cmake
 
 rm -rf _builds
 
-cmake -H. -B_builds \
+cmake -Hsrc -B_builds \
     -DCMAKE_VERBOSE_MAKEFILE=ON \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=_install \

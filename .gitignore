@@ -56,3 +56,5 @@ inst/doc
 vignettes/*.aux
 .vscode/
 docs
+_builds/
+_install/

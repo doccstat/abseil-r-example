@@ -9,3 +9,5 @@
 ^docs$
 ^pkgdown$
 ^.lintr$
+^_builds$
+^_install$

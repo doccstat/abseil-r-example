@@ -1,12 +1,8 @@
-#' Abseil C++ Header Files Package Example
-#'
-#' This package serves as a bare minimum example for the R package abseil.
-#'
-#' @docType package
-#' @name abseilExample
-#' @rdname abseilExample-package
-#' @importFrom Rcpp evalCpp
-#' @useDynLib abseilExample, .registration = TRUE
-#' @examples
-#' abseilExample:::joinString()
-NULL
+#' @title Dummy string
+#' @description Dummy string
+#' @return No return value, called for plotting.
+#' @export
+#' @useDynLib statusReturn, .registration = TRUE
+dummy_string <- function() {
+  print(.C("dummyString", ""))
+}

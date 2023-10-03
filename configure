@@ -1,0 +1,25 @@
+set -x
+set -e
+
+which cmake
+
+rm -rf _builds
+
+cmake -H. -B_builds \
+    -DCMAKE_VERBOSE_MAKEFILE=ON \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_INSTALL_PREFIX=_install \
+    -DCMAKE_SHARED_LIBRARY_PREFIX_CXX=""
+
+cmake --build _builds --target install --config Release
+
+# Linux
+cp _install/lib/statusReturn.so src/ || echo "Failed: statusReturn.so -> src"
+
+# Mac
+cp _install/lib/statusReturn.dylib src/statusReturn.so || echo "Failed: statusReturn.dylib -> src"
+
+
+# cmake -Bsrc/build -Ssrc
+
+# cmake --build src/build --target foo
